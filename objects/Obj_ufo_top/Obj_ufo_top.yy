@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Spr_ufo_small",
+    "path": "sprites/Spr_ufo_small/Spr_ufo_small.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": true,
-  "parentObjectId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "Obj_enemy",
+    "path": "objects/Obj_enemy/Obj_enemy.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -17,18 +23,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "background",
-    "path": "folders/Objects/background.yy",
+    "name": "TopMenu",
+    "path": "folders/Objects/background/TopMenu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_back_spawner",
+  "name": "Obj_ufo_top",
   "tags": [],
   "resourceType": "GMObject",
 }

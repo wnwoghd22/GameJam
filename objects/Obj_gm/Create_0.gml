@@ -6,4 +6,4 @@ enum e_space {
 	neutral,
 }
 
-global.current_space = e_space.matter;
+global.current_space = e_space.neutral;
