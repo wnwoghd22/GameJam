@@ -15,11 +15,11 @@ if fire_delta == 0 {
 		}
 		for(i = 0; i < 3; ++i) {
 			armo_anti = instance_create_layer(x, y, "Instances", Obj_armo1);
-			anti_x = lengthdir_x(2000, anti_deg - i * 120);
-			anti_y = lengthdir_y(2000, anti_deg - i * 120);
+			anti_x = x + lengthdir_x(2000, anti_deg - i * 120);
+			anti_y = y + lengthdir_y(2000, anti_deg - i * 120);
 			armo_anti.start_x = anti_x;
 			armo_anti.start_y = anti_y;
-			armo_anti.setDir(anti_deg + 180 - i * 120);
+			armo_anti.setDir(anti_deg - i * 120 + 180);
 			armo_anti.belong = global.current_space == e_space.matter ? e_space.antimatter : e_space.matter;
 		}
 

@@ -15,7 +15,7 @@ if flag = true && global.current_space == belong {
 	flag = false;
 }
 
-//if ((x - start_x) * cos(degtorad(origin_dir)) < 0 &&
+//if return to enemy then destroy
 if ((x - start_x) * cos(degtorad(origin_dir)) < -1 ||
     (start_y - y) * sin(degtorad(origin_dir)) < -1 )
 	instance_destroy();

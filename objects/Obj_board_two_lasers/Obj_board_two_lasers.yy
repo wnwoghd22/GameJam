@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "Spr_obstacle_board",
-    "path": "sprites/Spr_obstacle_board/Spr_obstacle_board.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
