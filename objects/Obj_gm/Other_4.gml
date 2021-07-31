@@ -9,6 +9,6 @@ if room == Rm_top {
 	ufo_right = instance_create_layer(room_width * (4 / 5), room_height / 2, "Instances", Obj_ufo_top);
 	ufo_right.belong = e_space.antimatter;
 	
-	create_button(room_width / 2, room_height * (2/3), 200, 100, "1 Player", test_action);
+	create_button(room_width / 2, room_height * (2/3), 200, 100, "1 Player", game_start);
 	create_button(room_width / 2, room_height * (2/3) + 100, 200, 100, "2 Players", test_action);
 }

@@ -15,8 +15,9 @@ if flag = true && global.current_space == belong {
 	flag = false;
 }
 
-if ((x - start_x) * cos(degtorad(origin_dir)) < 0 &&
-    (y - start_y) * sin(degtorad(origin_dir)) < 0 )
+//if ((x - start_x) * cos(degtorad(origin_dir)) < 0 &&
+if ((x - start_x) * cos(degtorad(origin_dir)) < -1 ||
+    (start_y - y) * sin(degtorad(origin_dir)) < -1 )
 	instance_destroy();
 
 if sqrt(sqr(x - start_x) + sqr(y - start_y)) > 2000 instance_destroy();

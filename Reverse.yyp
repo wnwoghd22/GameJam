@@ -1,8 +1,10 @@
 {
   "resources": [
     {"id":{"name":"Spr_armo","path":"sprites/Spr_armo/Spr_armo.yy",},"order":1,},
+    {"id":{"name":"Obj_ufo_bloom_small","path":"objects/Obj_ufo_bloom_small/Obj_ufo_bloom_small.yy",},"order":1,},
     {"id":{"name":"Obj_ufo_random_small","path":"objects/Obj_ufo_random_small/Obj_ufo_random_small.yy",},"order":0,},
     {"id":{"name":"Obj_board_two_lasers","path":"objects/Obj_board_two_lasers/Obj_board_two_lasers.yy",},"order":0,},
+    {"id":{"name":"Obj_homing","path":"objects/Obj_homing/Obj_homing.yy",},"order":2,},
     {"id":{"name":"Obj_enemy","path":"objects/Obj_enemy/Obj_enemy.yy",},"order":4,},
     {"id":{"name":"Obj_button","path":"objects/Obj_button/Obj_button.yy",},"order":1,},
     {"id":{"name":"Spr_star","path":"sprites/Spr_star/Spr_star.yy",},"order":2,},
@@ -19,6 +21,7 @@
     {"id":{"name":"Obj_planet","path":"objects/Obj_planet/Obj_planet.yy",},"order":0,},
     {"id":{"name":"Obj_laser_two_lasers","path":"objects/Obj_laser_two_lasers/Obj_laser_two_lasers.yy",},"order":2,},
     {"id":{"name":"Spr_planet","path":"sprites/Spr_planet/Spr_planet.yy",},"order":0,},
+    {"id":{"name":"Obj_ufo_homing_small","path":"objects/Obj_ufo_homing_small/Obj_ufo_homing_small.yy",},"order":2,},
     {"id":{"name":"src_get_hover","path":"scripts/src_get_hover/src_get_hover.yy",},"order":1,},
     {"id":{"name":"Rm_top","path":"rooms/Rm_top/Rm_top.yy",},"order":1,},
     {"id":{"name":"Obj_ufo_random_small_anti","path":"objects/Obj_ufo_random_small_anti/Obj_ufo_random_small_anti.yy",},"order":0,},
