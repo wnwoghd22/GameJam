@@ -12,3 +12,7 @@ if room == Rm_top {
 	create_button(room_width / 2, room_height * (2/3), 200, 100, "1 Player", game_start);
 	create_button(room_width / 2, room_height * (2/3) + 100, 200, 100, "2 Players", test_action);
 }
+else if room == Rm_game {
+	score = 0;
+	lives = 100;
+}

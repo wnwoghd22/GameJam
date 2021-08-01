@@ -15,3 +15,5 @@ vy = downBtn - upBtn;
 
 if vx != 0 x += vx * moveSpd;
 if vy != 0 y += vy * moveSpd;
+
+player_flash();

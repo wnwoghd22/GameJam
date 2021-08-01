@@ -1,5 +1,8 @@
 /// @description Init var
 
+get_damage = false;
+safe_term = 30;
+
 moveSpd = 6;
 rightBtn = 0;
 leftBtn = 0;
