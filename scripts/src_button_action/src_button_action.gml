@@ -3,5 +3,5 @@ function test_action() {
 }
 
 function game_start() {
-	room_goto(Rm_game);	
+	room_goto(Rm_game);
 }

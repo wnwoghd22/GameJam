@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Obj_obstacles",
-    "path": "objects/Obj_obstacles/Obj_obstacles.yy",
+    "name": "Obj_obstacle_moving",
+    "path": "objects/Obj_obstacle_moving/Obj_obstacle_moving.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

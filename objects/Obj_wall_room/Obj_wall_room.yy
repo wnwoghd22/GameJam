@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "Spr_wall_two_lasers",
-    "path": "sprites/Spr_wall_two_lasers/Spr_wall_two_lasers.yy",
+    "name": "Spr_room_wall",
+    "path": "sprites/Spr_room_wall/Spr_room_wall.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Obj_obstacle_moving",
-    "path": "objects/Obj_obstacle_moving/Obj_obstacle_moving.yy",
+    "name": "Obj_obstacle",
+    "path": "objects/Obj_obstacle/Obj_obstacle.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "two_lasers",
-    "path": "folders/Objects/Obstacles/two_lasers.yy",
+    "name": "wall",
+    "path": "folders/Objects/Obstacles/wall.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_wall_two_lasers",
+  "name": "Obj_wall_room",
   "tags": [],
   "resourceType": "GMObject",
 }

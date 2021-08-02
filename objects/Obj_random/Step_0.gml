@@ -9,7 +9,7 @@ if fire_delta == 0 {
 	armo.belong = global.current_space;
 	armo.start_x = x;
 	armo.start_y = y;
-		
+
 	anti_x = random_range(x - 2000, x + 2000);
 	anti_y = sqrt(abs(sqr(2000) - sqr(anti_x)));
 		

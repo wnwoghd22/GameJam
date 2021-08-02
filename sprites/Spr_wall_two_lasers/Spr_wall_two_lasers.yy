@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "two_lasers",
-    "path": "folders/Sprites/obstacles/two_lasers.yy",
+    "name": "obs_two_lasers",
+    "path": "folders/Sprites/obstacles/obs_two_lasers.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_wall_two_lasers",

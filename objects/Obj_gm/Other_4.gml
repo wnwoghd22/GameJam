@@ -15,4 +15,6 @@ if room == Rm_top {
 else if room == Rm_game {
 	score = 0;
 	lives = 100;
+	
+	spawn();
 }
