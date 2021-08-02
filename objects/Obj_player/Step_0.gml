@@ -13,7 +13,15 @@ rightBtn = keyboard_check(vk_right) || keyboard_check(ord("D"));
 vx = rightBtn - leftBtn;
 vy = downBtn - upBtn;
 
-if vx != 0 x += vx * moveSpd;
-if vy != 0 y += vy * moveSpd;
+if vx != 0 {
+	temp_X = x + vx * moveSpd;
+	if temp_X > 0 and temp_X < room_width
+		x = temp_X;
+}
+if vy != 0 {
+	temp_Y = y + vy * moveSpd;
+	if temp_Y > 0 and temp_Y < room_height
+		y = temp_Y;
+}
 
 player_flash();
