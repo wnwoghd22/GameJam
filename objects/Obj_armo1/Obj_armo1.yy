@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_armo1",
-    "path": "sprites/Spr_armo1/Spr_armo1.yy",
+    "name": "Spr_Bullet_enemy",
+    "path": "sprites/Spr_Bullet_enemy/Spr_Bullet_enemy.yy",
   },
   "solid": false,
   "visible": true,

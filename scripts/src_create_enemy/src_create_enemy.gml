@@ -7,10 +7,10 @@ function create_enemy(
 	fire_term
 ) {
 	enemy = instance_create_layer(x, y, "Instances", Obj_enemy);
-	enemy.image = image;
+	enemy.sprite_index = image;
 	enemy.enemy_life = life;
 	enemy.belong = space;
-	enemy.fire_pattern = pattern;
+	set_pattern(enemy, pattern);
 	enemy.fire_term = fire_term;
 	enemy.fire_delta = fire_term;
 }

@@ -4,7 +4,10 @@ if other.belong == global.current_space {
 	instance_destroy();
 
 	with(other) {
-		if --enemy_life == 0
-			instance_destroy();	
+		if --enemy_life == 0 {
+			instance_destroy();
+			if --global.enemy_num == 0
+				spawn();
+		}
 	}
 }

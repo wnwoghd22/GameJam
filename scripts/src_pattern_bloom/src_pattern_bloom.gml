@@ -1,4 +1,5 @@
 function pattern_bloom() {
+	
 	if !flag {
 		for(i = 0; i < 3; ++i) {
 			armo = instance_create_layer(x, y, "Instances", Obj_armo1);

@@ -9,7 +9,7 @@ if flag == true && belong == global.current_space {
 	flag = false;
 }
 
-if fire_delta > 0 --fire_delta;
+if fire_delta > 0 { --fire_delta; }
 
 if fire_delta == 0 && fire_pattern >= 0 {
 	script_execute(fire_pattern);
