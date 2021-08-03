@@ -14,7 +14,10 @@ if room == Rm_top {
 }
 else if room == Rm_game {
 	score = 0;
-	lives = 100;
+	max_life = 100;
+	lives = max_life;
+	max_energy = 100;
+	energy = max_energy;
 	
 	spawn();
 }

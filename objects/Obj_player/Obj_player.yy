@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "Spr_ship",
-    "path": "sprites/Spr_ship/Spr_ship.yy",
+    "name": "Spr_ship_Fernando",
+    "path": "sprites/Spr_ship_Fernando/Spr_ship_Fernando.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "Spr_ship_Fernando",
+    "path": "sprites/Spr_ship_Fernando/Spr_ship_Fernando.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -19,7 +22,12 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [],
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":48.0,"y":0.0,},
+    {"x":48.0,"y":48.0,},
+    {"x":0.0,"y":48.0,},
+  ],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},

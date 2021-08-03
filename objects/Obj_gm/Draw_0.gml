@@ -1,7 +1,8 @@
 /// @description 
 
 if room == Rm_top {
-	draw_text(100, 100, @"Reverse
+	draw_set_halign(fa_center);
+	draw_text(room_width / 2, 100, @"Reverse
 < 1 player > 
 move : WASD + cursor, fire : click
 < 2 players >
@@ -10,5 +11,5 @@ move : WASD + cursor, fire : click
 
 shift : switch space
 ")
-	
+	draw_set_halign(fa_left);
 }
