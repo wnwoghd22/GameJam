@@ -35,6 +35,7 @@
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_armo","path":"objects/Obj_armo/Obj_armo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_enemy","path":"objects/Obj_enemy/Obj_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_obstacle_moving","path":"objects/Obj_obstacle_moving/Obj_obstacle_moving.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Obj_item","path":"objects/Obj_item/Obj_item.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

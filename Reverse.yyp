@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"Rm_gameOver","path":"rooms/Rm_gameOver/Rm_gameOver.yy",},"order":2,},
     {"id":{"name":"Spr_armo","path":"sprites/Spr_armo/Spr_armo.yy",},"order":1,},
     {"id":{"name":"src_pattern_homing","path":"scripts/src_pattern_homing/src_pattern_homing.yy",},"order":1,},
     {"id":{"name":"Spr_health_bar","path":"sprites/Spr_health_bar/Spr_health_bar.yy",},"order":1,},
@@ -23,6 +24,7 @@
     {"id":{"name":"Spr_energy_bar","path":"sprites/Spr_energy_bar/Spr_energy_bar.yy",},"order":2,},
     {"id":{"name":"Spr_ufo_small","path":"sprites/Spr_ufo_small/Spr_ufo_small.yy",},"order":0,},
     {"id":{"name":"Obj_planet","path":"objects/Obj_planet/Obj_planet.yy",},"order":0,},
+    {"id":{"name":"Obj_item","path":"objects/Obj_item/Obj_item.yy",},"order":2,},
     {"id":{"name":"Obj_laser_two_lasers","path":"objects/Obj_laser_two_lasers/Obj_laser_two_lasers.yy",},"order":2,},
     {"id":{"name":"src_pattern_random","path":"scripts/src_pattern_random/src_pattern_random.yy",},"order":2,},
     {"id":{"name":"Spr_planet","path":"sprites/Spr_planet/Spr_planet.yy",},"order":0,},
@@ -31,6 +33,7 @@
     {"id":{"name":"Spr_Bullet_enemy","path":"sprites/Spr_Bullet_enemy/Spr_Bullet_enemy.yy",},"order":3,},
     {"id":{"name":"Rm_top","path":"rooms/Rm_top/Rm_top.yy",},"order":1,},
     {"id":{"name":"Spr_ship_Fernando","path":"sprites/Spr_ship_Fernando/Spr_ship_Fernando.yy",},"order":3,},
+    {"id":{"name":"Spr_Life","path":"sprites/Spr_Life/Spr_Life.yy",},"order":4,},
     {"id":{"name":"Spr_armo1","path":"sprites/Spr_armo1/Spr_armo1.yy",},"order":1,},
     {"id":{"name":"Obj_ufo_top","path":"objects/Obj_ufo_top/Obj_ufo_top.yy",},"order":0,},
     {"id":{"name":"Obj_back_spawner","path":"objects/Obj_back_spawner/Obj_back_spawner.yy",},"order":2,},
@@ -38,9 +41,10 @@
     {"id":{"name":"Spr_bullet_player","path":"sprites/Spr_bullet_player/Spr_bullet_player.yy",},"order":2,},
     {"id":{"name":"Spr_room_wall","path":"sprites/Spr_room_wall/Spr_room_wall.yy",},"order":0,},
     {"id":{"name":"src_enum_space","path":"scripts/src_enum_space/src_enum_space.yy",},"order":0,},
-    {"id":{"name":"src_player_flash","path":"scripts/src_player_flash/src_player_flash.yy",},"order":0,},
+    {"id":{"name":"src_player_damage","path":"scripts/src_player_damage/src_player_damage.yy",},"order":0,},
     {"id":{"name":"Spr_En1","path":"sprites/Spr_En1/Spr_En1.yy",},"order":4,},
     {"id":{"name":"Obj_gm","path":"objects/Obj_gm/Obj_gm.yy",},"order":0,},
+    {"id":{"name":"Obj_life","path":"objects/Obj_life/Obj_life.yy",},"order":0,},
     {"id":{"name":"src_create_enemy","path":"scripts/src_create_enemy/src_create_enemy.yy",},"order":1,},
     {"id":{"name":"src_button_action","path":"scripts/src_button_action/src_button_action.yy",},"order":2,},
     {"id":{"name":"Obj_wall_two_lasers","path":"objects/Obj_wall_two_lasers/Obj_wall_two_lasers.yy",},"order":1,},
@@ -66,6 +70,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Rm_top","path":"rooms/Rm_top/Rm_top.yy",},},
     {"roomId":{"name":"Rm_game","path":"rooms/Rm_game/Rm_game.yy",},},
+    {"roomId":{"name":"Rm_gameOver","path":"rooms/Rm_gameOver/Rm_gameOver.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -103,6 +108,8 @@
     {"folderPath":"folders/Sprites/obstacles/obs_S_curve.yy","order":3,"resourceVersion":"1.0","name":"obs_S_curve","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/gameplay.yy","order":4,"resourceVersion":"1.0","name":"gameplay","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/enemy_pattern.yy","order":5,"resourceVersion":"1.0","name":"enemy_pattern","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/item.yy","order":6,"resourceVersion":"1.0","name":"item","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/item/life.yy","order":0,"resourceVersion":"1.0","name":"life","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -4,6 +4,14 @@ if inertia == false && belong != e_space.neutral {
 	speed = moveSpeed;
 }
 
+if inertia == false && !global.pause {
+	speed = moveSpeed;
+	inertia = true;
+} else if global.pause && inertia == true {
+	speed = 0;	
+	inertia = false;
+}
+
 if flag = false && global.current_space != belong {
 	image_alpha = 0.3;
 	direction += 180;

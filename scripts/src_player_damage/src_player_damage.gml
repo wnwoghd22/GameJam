@@ -11,3 +11,14 @@ function player_flash() {
 		}
 	}
 }
+
+function player_get_damage(num) {
+	get_damage = true;
+	lives -= num;
+	if lives == 0 {
+		with(instance_find(Obj_gm, 0)) {
+			alarm_set(0, 30);
+		}
+		instance_destroy();
+	}
+}

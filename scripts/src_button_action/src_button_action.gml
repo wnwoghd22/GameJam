@@ -5,3 +5,7 @@ function test_action() {
 function game_start() {
 	room_goto(Rm_game);
 }
+
+function goto_menu() {
+	room_goto(Rm_top);	
+}

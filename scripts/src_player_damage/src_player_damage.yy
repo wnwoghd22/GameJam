@@ -6,7 +6,7 @@
     "path": "folders/Scripts/player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "src_player_flash",
+  "name": "src_player_damage",
   "tags": [],
   "resourceType": "GMScript",
 }

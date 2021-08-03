@@ -1,10 +1,8 @@
 /// @description collision bullet
 
 if other.belong == global.current_space {
-	if !get_damage {
-		get_damage = true;
-		lives -= 10;
-	}
+	if !get_damage
+		player_get_damage(10);
 	
 	with(other) {
 		instance_destroy();
