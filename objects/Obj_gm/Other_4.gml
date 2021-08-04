@@ -20,13 +20,20 @@ case Rm_game :
 	global.health[0] = global.max_health[0];
 	
 	if global.two_players {
-		instance_create_layer(room_width * (1/4), room_height * (4 / 5), "Instances", Obj_player1);
-		instance_create_layer(room_width * (3/4), room_height * (4 / 5), "Instances", Obj_player2);
+		var p1 = instance_create_layer(room_width * (1/4), room_height * (4 / 5), "Instances", Obj_player);
+		p1.sprite_index = Spr_ship_Fernando;
+		p1.player_index = 0;
+		
+		var p2 = instance_create_layer(room_width * (3/4), room_height * (4 / 5), "Instances", Obj_player);
+		p2.sprite_index = Spr_ship_F_2;
+		p2.player_index = 1;
 	
 		global.max_health[1] = 100;
 		global.health[1] = global.max_health[1];
 	} else {
-		instance_create_layer(room_width / 2, room_height * (4 / 5), "Instances", Obj_player1);
+		var p1 = instance_create_layer(room_width / 2, room_height * (4 / 5), "Instances", Obj_player);
+		p1.sprite_index = Spr_ship_Fernando;
+		p1.player_index = 0;
 	
 		global.max_health[1] = 1;
 		global.health[1] = 0;

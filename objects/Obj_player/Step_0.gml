@@ -4,7 +4,7 @@ if !global.pause {
 	if !global.two_players
 		player_control_general();
 	else
-		player_one_control();
+		global.controller[player_index]();
 
 	//if player is damaged
 	player_flash();
