@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_armo",
-    "path": "sprites/Spr_armo/Spr_armo.yy",
+    "name": "Spr_bullet_player",
+    "path": "sprites/Spr_bullet_player/Spr_bullet_player.yy",
   },
   "solid": false,
   "visible": true,

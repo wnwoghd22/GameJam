@@ -1,2 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description
+
+if inertia == false && !global.pause {
+	speed = moveSpd;
+	inertia = true;
+} else if global.pause && inertia == true {
+	speed = 0;	
+	inertia = false;
+}

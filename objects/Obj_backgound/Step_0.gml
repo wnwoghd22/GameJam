@@ -9,6 +9,8 @@ if flag && global.current_space == e_space.matter {
 		flag = false;
 }
 
-y += moveSpeed;
+//if !global.pause {
+	y += moveSpeed;
+//}
 
 if y > room_height instance_destroy();
