@@ -4,6 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-_action = function () {
-		lives = min(global.max_life, lives + 20);
+_action = function (index) {
+	global.health[index]= min(global.max_health[index], global.health[index] + 20);
 }

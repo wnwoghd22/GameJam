@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Spr_ship_Fernando",
+    "path": "sprites/Spr_ship_Fernando/Spr_ship_Fernando.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": {

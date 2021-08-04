@@ -1,4 +1,7 @@
 /// @description Init var
+player_index = -1;
+
+direction = 90;
 
 get_damage = false;
 safe_term = 30;

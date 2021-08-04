@@ -1,5 +1,5 @@
 function pattern_homing() {
-	var instance_player = instance_find(Obj_player, 0);
+	var instance_player = instance_nearest(x, y, Obj_player);
 	if instance_player {
 		fire_dir = point_direction(x, y, instance_player.x, instance_player.y);
 		if !flag {

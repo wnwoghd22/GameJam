@@ -14,11 +14,12 @@ function player_flash() {
 
 function player_get_damage(num) {
 	get_damage = true;
-	lives -= num;
-	if lives == 0 {
+	global.health[player_index] -= num;
+	if global.health[player_index] <= 0 
+		instance_destroy();
+	if global.health[0] <= 0 && global.health[1] <= 0 {
 		with(instance_find(Obj_gm, 0)) {
 			alarm_set(0, 30);
 		}
-		instance_destroy();
 	}
 }
