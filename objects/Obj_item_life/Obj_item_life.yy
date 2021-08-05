@@ -33,7 +33,7 @@
     "path": "folders/Objects/item/life.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_life",
+  "name": "Obj_item_life",
   "tags": [],
   "resourceType": "GMObject",
 }

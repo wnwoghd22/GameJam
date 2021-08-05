@@ -10,5 +10,5 @@ if flag == true && belong == global.current_space {
 }
 
 if !global.pause {
-	if method_step >= 0 method_step();
+	if !is_undefined(method_step) method_step();
 }

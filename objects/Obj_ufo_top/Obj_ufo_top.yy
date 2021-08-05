@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "TopMenu",
-    "path": "folders/Objects/background/TopMenu.yy",
+    "path": "folders/Objects/TopMenu.yy",
   },
   "resourceVersion": "1.0",
   "name": "Obj_ufo_top",

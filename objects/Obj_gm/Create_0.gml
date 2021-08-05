@@ -1,7 +1,7 @@
 /// @description Init
 
 global.current_space = e_space.neutral;
-global.spawn_flag = e_spawn.none;
+global.spawn_order = 0;
 global.enemy_num = 0;
 global.pause = false;
 global.two_players = false;

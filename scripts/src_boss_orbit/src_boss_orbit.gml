@@ -1,6 +1,10 @@
 function boss_orbit_create() {
+	boss_health = 30;
 	belong = e_space.matter;
+	get_damage = boss_orbit_body_get_damage;
+	
 	angle = 0;
+	
 	orbit_len = 100;
 	orbit[0] = instance_create_layer(
 		x + lengthdir_x(orbit_len, angle), y + lengthdir_y(orbit_len, angle),
@@ -18,8 +22,8 @@ function boss_orbit_create() {
 	
 	orbit[0].fire_deg = 0;
 	orbit[1].fire_deg = 0;
-	orbit[0].fire_term = 10;
-	orbit[1].fire_term = 10;
+	orbit[0].fire_term = 3;
+	orbit[1].fire_term = 3;
 	
 	method_step = boss_orbit_body_step;
 	orbit[0].method_step = boss_orbit_unit_step;
@@ -27,8 +31,6 @@ function boss_orbit_create() {
 }
 
 function boss_orbit_body_step() {
-	show_debug_message("boss_step");
-	
 	if !flag {
 		angle += 5;
 		if angle >= 360 angle = 0;
@@ -45,11 +47,27 @@ function boss_orbit_body_step() {
 }
 
 function boss_orbit_unit_step() {
-	
-	for(i = 0; i < 3; ++i) {
-			create_bullet(x, y, x + lengthdir_x(1650, fire_deg + i * 120), y + lengthdir_y(1650, fire_deg + i * 120), belong);
+	if fire_delta > 0 { --fire_delta; }
+
+	if fire_delta == 0 {
+		for(i = 0; i < 3; ++i) {
+				create_bullet(x, y, x + lengthdir_x(1650, fire_deg + i * 120), y + lengthdir_y(1650, fire_deg + i * 120), belong);
+		}
+		if !flag { fire_deg = fire_deg == 355 ? 0 : fire_deg + 5; }
+		else { fire_deg = fire_deg == 0 ? 355 : fire_deg - 5; }
+		fire_delta = fire_term;
 	}
-	if !flag { fire_deg = fire_deg == 355 ? 0 : fire_deg + 5; }
-	else { fire_deg = fire_deg == 0 ? 355 : fire_deg - 5; }
-	
+}
+
+function boss_orbit_body_get_damage() {
+	if --boss_health == 0 {
+		score += 100;
+		
+		instance_destroy(orbit[0]);
+		instance_destroy(orbit[1]);
+		instance_create_layer(x, y, "Instances", Obj_item_life);
+		instance_destroy();
+		
+		spawn();
+	}
 }

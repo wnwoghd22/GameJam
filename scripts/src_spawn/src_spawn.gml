@@ -1,31 +1,15 @@
-enum e_spawn {
-	none = 0,
-	enemy = 1,
-	obstacle = 2,
-	boss = 3,
-};
-
 function spawn() {
-	//global.spawn_flag = choose(e_spawn.enemy, e_spawn.obstacle);
-	
-	global.spawn_flag = e_spawn.enemy;
-	
-	switch global.spawn_flag {
-	case e_spawn.enemy:
-		var _enemy_num = irandom_range(1, 3);
-		spawn_enemy(_enemy_num);
-		break;
-	case e_spawn.obstacle:
+	if (global.spawn_order < 8)
+		spawn_enemy();
+	else if (global.spawn_order == 8)
 		spawn_obstacle();
-		break;
-	case e_spawn.boss:
-		break;
-	case e_spawn.none:
-		break;
-	}
+	else if (global.spawn_order == 9)
+		spawn_boss();
+		
+	global.spawn_order = global.spawn_order == 9 ? 0 : global.spawn_order + 1;
 }
 
-function spawn_enemy(num) {
+function spawn_enemy() {
 	var enemy_image_list = [
 		Spr_En1,
 		Spr_ufo_small
@@ -36,14 +20,14 @@ function spawn_enemy(num) {
 		pattern_homing
 	];
 	
-	global.enemy_num = num;
+	global.enemy_num = irandom_range(1, 3);
 	
-	for (var i = 0; i < num; ++i) {
+	for (var i = 0; i < global.enemy_num; ++i) {
 		create_enemy(
-			room_width * (i + 1) / (num + 1), room_height / 5,
+			room_width * (i + 1) / (global.enemy_num + 1), room_height / 5,
 			enemy_image_list[irandom(array_length(enemy_image_list) - 1)],
 			3, choose(e_space.matter, e_space.antimatter),
-			enemy_fire_pattern[irandom(array_length(enemy_fire_pattern) - 1)], irandom_range(7, 15)	
+			enemy_fire_pattern[irandom(array_length(enemy_fire_pattern) - 1)], irandom_range(7, 15)
 		)
 	}
 }
@@ -53,4 +37,11 @@ function spawn_obstacle() {
 		Obj_obs_two_lasers
 	];
 	instance_create_layer(0, 0, "Instances", obstacle_list[irandom(array_length(obstacle_list) - 1)]);	
+}
+
+function spawn_boss() {
+	static boss_list = [
+		Obj_boss_orbit_body
+	];
+	instance_create_layer(room_width / 2, room_height / 5, "Instances", boss_list[irandom(array_length(boss_list) - 1)]);	
 }

@@ -1,9 +1,9 @@
 /// @description 
 
-enemy_health = 1;
+boss_health = 1;
 
-method_step = -1;
-get_damage = -1;
+method_step = undefined;
+get_damage = undefined;
 
 flag = false;
 belong = e_space.neutral;
