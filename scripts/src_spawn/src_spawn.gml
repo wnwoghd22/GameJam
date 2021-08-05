@@ -26,7 +26,7 @@ function spawn_enemy() {
 		create_enemy(
 			room_width * (i + 1) / (global.enemy_num + 1), room_height / 5,
 			enemy_image_list[irandom(array_length(enemy_image_list) - 1)],
-			3, choose(e_space.matter, e_space.antimatter),
+			irandom_range(3, 5), choose(e_space.matter, e_space.antimatter),
 			enemy_fire_pattern[irandom(array_length(enemy_fire_pattern) - 1)], irandom_range(7, 15)
 		)
 	}

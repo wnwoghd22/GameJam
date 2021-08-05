@@ -1,16 +1,16 @@
 function create_enemy(
-	x, y,
-	image,
-	health,
-	space,
-	pattern,
-	fire_term
+	_x, _y,
+	_image,
+	_health,
+	_space,
+	_pattern,
+	_fire_term
 ) {
-	enemy = instance_create_layer(x, y, "Instances", Obj_enemy);
-	enemy.sprite_index = image;
-	enemy.enemy_health = health;
-	enemy.belong = space;
-	set_pattern(enemy, pattern);
-	enemy.fire_term = fire_term;
-	enemy.fire_delta = fire_term;
+	enemy = instance_create_layer(_x, _y, "Instances", Obj_enemy);
+	enemy.sprite_index = _image;
+	enemy.enemy_health = _health;
+	enemy.belong = _space;
+	set_pattern(enemy, _pattern);
+	enemy.fire_term = _fire_term;
+	enemy.fire_delta = _fire_term;
 }
