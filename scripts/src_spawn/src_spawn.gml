@@ -41,7 +41,8 @@ function spawn_obstacle() {
 
 function spawn_boss() {
 	static boss_list = [
-		Obj_boss_orbit_body
+		Obj_boss_orbit_body,
+		Obj_boss_wall_body,
 	];
 	instance_create_layer(room_width / 2, room_height / 5, "Instances", boss_list[irandom(array_length(boss_list) - 1)]);	
 }

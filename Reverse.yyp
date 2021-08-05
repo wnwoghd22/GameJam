@@ -19,6 +19,7 @@
     {"id":{"name":"Obj_star","path":"objects/Obj_star/Obj_star.yy",},"order":2,},
     {"id":{"name":"src_pattern_bloom","path":"scripts/src_pattern_bloom/src_pattern_bloom.yy",},"order":0,},
     {"id":{"name":"Spr_ship_dev","path":"sprites/Spr_ship_dev/Spr_ship_dev.yy",},"order":0,},
+    {"id":{"name":"Obj_boss_wall_body","path":"objects/Obj_boss_wall_body/Obj_boss_wall_body.yy",},"order":0,},
     {"id":{"name":"Spr_laser_two_lasers","path":"sprites/Spr_laser_two_lasers/Spr_laser_two_lasers.yy",},"order":1,},
     {"id":{"name":"Obj_backgound","path":"objects/Obj_backgound/Obj_backgound.yy",},"order":0,},
     {"id":{"name":"Obj_enemy_bullet","path":"objects/Obj_enemy_bullet/Obj_enemy_bullet.yy",},"order":3,},
@@ -127,6 +128,7 @@
     {"folderPath":"folders/Objects/enemy/boss.yy","order":2,"resourceVersion":"1.0","name":"boss","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/enemy/boss/boss_orbit.yy","order":1,"resourceVersion":"1.0","name":"boss_orbit","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/boss/boss_orbit.yy","order":1,"resourceVersion":"1.0","name":"boss_orbit","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/enemy/boss/boss_wall.yy","order":2,"resourceVersion":"1.0","name":"boss_wall","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

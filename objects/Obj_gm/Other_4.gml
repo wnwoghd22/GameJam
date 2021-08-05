@@ -13,7 +13,7 @@ case Rm_top :
 	create_button(room_width / 2, room_height * (2/3), 200, 100, "1 Player", game_start_1p);
 	create_button(room_width / 2, room_height * (2/3) + 100, 200, 100, "2 Players", game_start_2p);
 	
-	//create_button(room_width / 2, room_height * (2/3) + 200, 200, 100, "test", game_test);
+	create_button(room_width / 2, room_height * (2/3) + 200, 200, 100, "test", game_test);
 	
 	break;
 case Rm_game :
