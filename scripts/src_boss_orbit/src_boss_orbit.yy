@@ -6,7 +6,7 @@
     "path": "folders/Scripts/enemy_pattern/boss_pattern.yy",
   },
   "resourceVersion": "1.0",
-  "name": "src_boss_wall",
+  "name": "src_boss_orbit",
   "tags": [],
   "resourceType": "GMScript",
 }

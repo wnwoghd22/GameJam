@@ -6,6 +6,11 @@ function game_start() {
 	room_goto(Rm_game);
 }
 
+function game_test() {
+	global.two_players = false;
+	room_goto(Rm_test);	
+}
+
 function game_start_1p() {
 	global.two_players = false;
 	game_start();

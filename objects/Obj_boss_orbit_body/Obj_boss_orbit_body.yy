@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "Spr_Bullet_enemy",
-    "path": "sprites/Spr_Bullet_enemy/Spr_Bullet_enemy.yy",
+    "name": "Spr_En1",
+    "path": "sprites/Spr_En1/Spr_En1.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Obj_bullet",
-    "path": "objects/Obj_bullet/Obj_bullet.yy",
+    "name": "Obj_boss",
+    "path": "objects/Obj_boss/Obj_boss.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,15 +23,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "effects",
-    "path": "folders/Objects/enemy/effects.yy",
+    "name": "boss_orbit",
+    "path": "folders/Objects/enemy/boss/boss_orbit.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_armo1",
+  "name": "Obj_boss_orbit_body",
   "tags": [],
   "resourceType": "GMObject",
 }

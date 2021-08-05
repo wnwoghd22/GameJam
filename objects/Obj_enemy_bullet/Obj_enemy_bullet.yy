@@ -31,7 +31,7 @@
     "path": "folders/Objects/enemy/effects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_armo1",
+  "name": "Obj_enemy_bullet",
   "tags": [],
   "resourceType": "GMObject",
 }

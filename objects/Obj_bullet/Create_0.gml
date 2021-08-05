@@ -14,6 +14,6 @@ function setDir(dir) {
 	image_angle = direction + 90;
 }
 
-setDir(random_range(0, 359));
+//setDir(random_range(0, 359));
 
 //speed = moveSpeed;
