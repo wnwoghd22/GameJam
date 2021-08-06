@@ -1,8 +1,6 @@
 /// @description spawn elements
 
-//instance_create_layer(irandom(room_width), 0, "Instances_back", elements[irandom(elements.length)]);
-
-element_num = irandom(2);
-instance_create_layer(irandom(room_width), -100, "Instances_back", elements[element_num]);
+element = instance_create_layer(irandom(room_width), -100, "Instances_back", Obj_backgound);
+element.sprite_index = sprite_list[irandom(array_length(sprite_list) - 1)];
 
 alarm[0] = 10;
