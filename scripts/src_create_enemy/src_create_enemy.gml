@@ -6,7 +6,10 @@ function create_enemy(
 	_pattern,
 	_fire_term
 ) {
-	enemy = instance_create_layer(_x, _y, "Instances", Obj_enemy);
+	enemy = instance_create_layer(room_width / 2, -50, "Instances", Obj_enemy);
+	enemy.target_x = _x;
+	enemy.target_y = _y;
+	enemy.is_move = true;
 	enemy.sprite_index = _image;
 	enemy.enemy_health = _health;
 	enemy.belong = _space;

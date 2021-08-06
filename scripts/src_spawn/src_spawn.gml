@@ -34,7 +34,7 @@ function spawn_enemy() {
 
 function spawn_obstacle() {
 	static obstacle_list = [
-//		obstacle_two_lasers_create,
+		obstacle_two_lasers_create,
 		obstacle_S_curve_create,
 	];
 	var obs = instance_create_layer(0, 0, "Instances", Obj_obstacle_moving);
@@ -48,5 +48,8 @@ function spawn_boss() {
 		Obj_boss_orbit_body,
 		Obj_boss_wall_body,
 	];
-	instance_create_layer(room_width / 2, room_height / 5, "Instances", boss_list[irandom(array_length(boss_list) - 1)]);	
+	var _boss = instance_create_layer(room_width / 2, -100, "Instances", boss_list[irandom(array_length(boss_list) - 1)]);	
+	_boss.target_x = room_width / 2;
+	_boss.target_y = room_height / 5;
+	_boss.is_move = true;
 }
