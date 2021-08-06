@@ -30,3 +30,5 @@ if flag && global.current_space == e_space.matter {
 }
 
 y += moveSpeed;
+
+if !is_undefined(method_step) method_step();

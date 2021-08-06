@@ -34,9 +34,13 @@ function spawn_enemy() {
 
 function spawn_obstacle() {
 	static obstacle_list = [
-		Obj_obs_two_lasers
+//		obstacle_two_lasers_create,
+		obstacle_S_curve_create,
 	];
-	instance_create_layer(0, 0, "Instances", obstacle_list[irandom(array_length(obstacle_list) - 1)]);	
+	var obs = instance_create_layer(0, 0, "Instances", Obj_obstacle_moving);
+	with obs {
+		obstacle_list[irandom(array_length(obstacle_list) - 1)]();
+	}
 }
 
 function spawn_boss() {
