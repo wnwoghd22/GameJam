@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_En1",
-    "path": "sprites/Spr_En1/Spr_En1.yy",
+    "name": "Spr_boss",
+    "path": "sprites/Spr_boss/Spr_boss.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "Spr_item_Life",
-    "path": "sprites/Spr_item_Life/Spr_item_Life.yy",
+    "name": "Spr_debris",
+    "path": "sprites/Spr_debris/Spr_debris.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Obj_item",
-    "path": "objects/Obj_item/Obj_item.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,15 +22,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "life",
-    "path": "folders/Objects/item/life.yy",
+    "name": "effect",
+    "path": "folders/Objects/effect.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_item_life",
+  "name": "Obj_debris",
   "tags": [],
   "resourceType": "GMObject",
 }

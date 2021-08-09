@@ -15,8 +15,10 @@ function player_flash() {
 function player_get_damage(num) {
 	get_damage = true;
 	global.health[player_index] -= num;
-	if global.health[player_index] <= 0 
+	if global.health[player_index] <= 0  {
 		instance_destroy();
+		destroy_effect();
+	}
 	if global.health[0] <= 0 && global.health[1] <= 0 {
 		with(instance_find(Obj_gm, 0)) {
 			alarm_set(0, 30);

@@ -104,6 +104,7 @@ function boss_wall_body_get_damage() {
 		instance_create_layer(x, y, "Instances", Obj_item_life);
 		instance_destroy();
 		
+		destroy_effect();
 		spawn();
 	}
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_item_Life",
-    "path": "sprites/Spr_item_Life/Spr_item_Life.yy",
+    "name": "Spr_item_Ammo",
+    "path": "sprites/Spr_item_Ammo/Spr_item_Ammo.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,11 +29,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "life",
-    "path": "folders/Objects/item/life.yy",
+    "name": "armo",
+    "path": "folders/Objects/item/armo.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_item_life",
+  "name": "Obj_item_armo",
   "tags": [],
   "resourceType": "GMObject",
 }

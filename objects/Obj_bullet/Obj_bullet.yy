@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "effects",
-    "path": "folders/Objects/enemy/effects.yy",
+    "name": "bullet",
+    "path": "folders/Objects/enemy/bullet.yy",
   },
   "resourceVersion": "1.0",
   "name": "Obj_bullet",

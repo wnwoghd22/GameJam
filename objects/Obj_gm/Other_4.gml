@@ -13,6 +13,8 @@ case Rm_top :
 	create_button(room_width / 2, room_height * (2/3), 200, 100, "1 Player", game_start_1p);
 	create_button(room_width / 2, room_height * (2/3) + 100, 200, 100, "2 Players", game_start_2p);
 	
+	play_sound_top();
+	
 	//create_button(room_width / 2, room_height * (2/3) + 200, 200, 100, "test", game_test);
 	
 	break;
@@ -22,20 +24,20 @@ case Rm_game :
 	global.health[0] = global.max_health[0];
 	
 	if global.two_players {
-		var p1 = instance_create_layer(room_width * (1/4), room_height * (4 / 5), "Instances", Obj_player);
-		p1.sprite_index = Spr_ship_Fernando;
-		p1.player_index = 0;
+		global.player[0] = instance_create_layer(room_width * (1/4), room_height * (4 / 5), "Instances", Obj_player);
+		global.player[0].sprite_index = Spr_ship_Fernando;
+		global.player[0].player_index = 0;
 		
-		var p2 = instance_create_layer(room_width * (3/4), room_height * (4 / 5), "Instances", Obj_player);
-		p2.sprite_index = Spr_ship_F_2;
-		p2.player_index = 1;
+		global.player[1] = instance_create_layer(room_width * (3/4), room_height * (4 / 5), "Instances", Obj_player);
+		global.player[1].sprite_index = Spr_ship_F_2;
+		global.player[1].player_index = 1;
 	
 		global.max_health[1] = 100;
 		global.health[1] = global.max_health[1];
 	} else {
-		var p1 = instance_create_layer(room_width / 2, room_height * (4 / 5), "Instances", Obj_player);
-		p1.sprite_index = Spr_ship_Fernando;
-		p1.player_index = 0;
+		global.player[0] = instance_create_layer(room_width / 2, room_height * (4 / 5), "Instances", Obj_player);
+		global.player[0].sprite_index = Spr_ship_Fernando;
+		global.player[0].player_index = 0;
 	
 		global.max_health[1] = 1;
 		global.health[1] = 0;

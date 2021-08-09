@@ -23,9 +23,7 @@ function player_control_general() {
 	}
 
 	if keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter) {
-		bullet = instance_create_layer(x, y, "Instances", Obj_player_shot);
-		bullet.direction = direction;
-		bullet.image_angle = direction + 90;
+		player_attack(attack_type);
 	}
 }
 
@@ -54,9 +52,7 @@ function player_one_control() {
 	}
 
 	if keyboard_check_pressed(vk_space) {
-		bullet = instance_create_layer(x, y, "Instances", Obj_player_shot);
-		bullet.direction = direction;
-		bullet.image_angle = direction + 90;
+		player_attack(attack_type);
 	}
 }
 
@@ -85,8 +81,6 @@ function player_two_control() {
 	}
 
 	if keyboard_check_pressed(vk_enter) {
-		bullet = instance_create_layer(x, y, "Instances", Obj_player_shot);
-		bullet.direction = direction;
-		bullet.image_angle = direction + 90;
+		player_attack(attack_type);
 	}
 }

@@ -3,10 +3,12 @@
 if keyboard_check_pressed(vk_shift) && !global.pause {
 	if global.current_space == e_space.matter global.current_space = e_space.antimatter;
 	else if global.current_space == e_space.antimatter global.current_space = e_space.matter;
+	if room == Rm_top play_sound_top();
 }
-
-if room == Rm_game {
-	
+switch room {
+case Rm_top :
+	break;
+case Rm_game :
 	if keyboard_check_pressed(vk_escape) {
 		if !global.pause { 
 			global.pause = true; 
@@ -39,4 +41,7 @@ if room == Rm_game {
 	default :
 		break;
 	}
+	break;
+default :
+	break;
 }

@@ -11,8 +11,8 @@ function spawn() {
 
 function spawn_enemy() {
 	var enemy_image_list = [
-		Spr_En1,
-		Spr_ufo_small
+		Spr_Enemy1,
+		Spr_Enemy2,
 	];
 	var enemy_fire_pattern = [
 		pattern_random,
