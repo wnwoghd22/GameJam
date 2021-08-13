@@ -1,5 +1,5 @@
 function player_attack(_attack_type) {
-	//audio_play_sound();
+	play_SE_fire();
 	
 	switch _attack_type {
 	case 0 :

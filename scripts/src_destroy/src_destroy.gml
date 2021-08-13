@@ -1,4 +1,5 @@
 function destroy_effect() {
+	play_SE_crash();
 	repeat(10) {
 		var _debris = instance_create_layer(x, y, "Instances", Obj_debris);
 		_debris.direction = irandom_range(0, 359);

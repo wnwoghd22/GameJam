@@ -2,7 +2,7 @@
 
 global.current_space = e_space.matter;
 
-stop_all_sound();
+audio_stop_all();
 
 switch room {
 case Rm_top :
@@ -48,10 +48,8 @@ case Rm_game :
 	global.energy = global.max_energy;
 	global.pause = 0;
 	
-	global.spawn_order = 0;
+	global.spawn_order = 9;
 	spawn();
-	
-	play_sound_game();
 	
 	break;
 case Rm_gameOver :

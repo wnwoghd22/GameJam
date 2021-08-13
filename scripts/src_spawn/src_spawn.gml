@@ -1,12 +1,18 @@
 function spawn() {
-	if (global.spawn_order < 8)
+	global.spawn_order = global.spawn_order == 9 ? 0 : global.spawn_order + 1;
+	
+	if (global.spawn_order == 0) {
 		spawn_enemy();
-	else if (global.spawn_order == 8)
+		play_sound_game(); //switch BGM
+	}
+	else if (global.spawn_order < 8)
+		spawn_enemy();
+	else if (global.spawn_order == 8) {
 		spawn_obstacle();
+		play_sound_game(); //switch BGM
+	}
 	else if (global.spawn_order == 9)
 		spawn_boss();
-		
-	global.spawn_order = global.spawn_order == 9 ? 0 : global.spawn_order + 1;
 }
 
 function spawn_enemy() {
