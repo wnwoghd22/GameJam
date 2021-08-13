@@ -3,7 +3,17 @@
 if keyboard_check_pressed(vk_shift) && !global.pause {
 	if global.current_space == e_space.matter global.current_space = e_space.antimatter;
 	else if global.current_space == e_space.antimatter global.current_space = e_space.matter;
-	if room == Rm_top play_sound_top();
+	
+	switch room {
+	case Rm_top :
+		play_sound_top();
+		break;
+	case Rm_game :
+		play_sound_game();
+		break;
+	default :
+		break;
+	}
 }
 switch room {
 case Rm_top :
@@ -36,6 +46,7 @@ case Rm_game :
 		}
 		else if global.energy == 0 {
 			global.current_space = e_space.matter;
+			play_sound_game();
 		}
 		break;
 	default :

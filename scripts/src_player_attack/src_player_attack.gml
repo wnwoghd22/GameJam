@@ -1,4 +1,6 @@
 function player_attack(_attack_type) {
+	//audio_play_sound();
+	
 	switch _attack_type {
 	case 0 :
 		player_attack_normal1();
@@ -8,7 +10,7 @@ function player_attack(_attack_type) {
 		break;
 	case 2 :
 		player_attack_normal3();
-		break;	
+		break;
 	case 3 :
 		player_attack_normal4();
 		break;

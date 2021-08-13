@@ -2,6 +2,8 @@
 
 global.current_space = e_space.matter;
 
+stop_all_sound();
+
 switch room {
 case Rm_top :
 	ufo_left = instance_create_layer(room_width * (1 / 5), room_height / 2, "Instances", Obj_ufo_top);
@@ -48,6 +50,8 @@ case Rm_game :
 	
 	global.spawn_order = 0;
 	spawn();
+	
+	play_sound_game();
 	
 	break;
 case Rm_gameOver :
